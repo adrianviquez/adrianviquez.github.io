@@ -1,6 +1,6 @@
-# Don't track content of these folders
-node_modules/
-
-package-lock.json
+/node_modules
 
 app.js
+
+package-lock.json
+package.json
