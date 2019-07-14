@@ -10,10 +10,6 @@ html {
     color: #555;
 }
 
-section {
-    padding: 100px 80px;
-}
-
 ul {
     list-style: none;
 }
@@ -55,24 +51,19 @@ header .container h3 {
 
 /* Hero Styles */
 .cover {
-    display: flex;
+    /* display: flex;
     flex-direction: column; 
-    min-height: 100vh;
-    color: white;
+    /* color: white;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    align-items: center;  */
+    height: 100vh;
 }
 
 .cover .background-image {
-    position: absolute;
-    background: url(../images/LandingImage.jpeg) center center fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+    background: url(../images/LandingImage.jpeg);
     background-size: cover;
-    background-attachment: fixed;
+    height: 100%;
     z-index: -1;
 }
 
