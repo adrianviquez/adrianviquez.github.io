@@ -23,54 +23,28 @@ hr {
     margin-top: 10px;
 }
 
-/* header .container {
-    border: solid 1px black;
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-header .container h3 {
-    font-style: normal;
-    margin: 0px 10px;
-}
-
-header .container .middle-info {
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-basis: 33%;
-}
-
-header .container h3 {
-    flex-basis: 33%;
-    text-align: center;
-} */
-
 /* Hero Styles */
 .cover {
-    /* display: flex;
-    flex-direction: column; 
-    /* color: white;
+    position: relative;
+    /* flex-direction: column; 
     justify-content: center;
-    text-align: center;
     align-items: center;  */
     height: 100vh;
 }
 
-.cover .background-image {
+.background-image {
     background: url(../images/LandingImage.jpeg);
     background-size: cover;
     height: 100%;
     z-index: -1;
 }
 
-.hero-content-area {
-    /* border: solid black 1px; */
-    margin-right: 400px;
-    margin-top: 50px;
+.content-area {
+    position: absolute; 
+    color: white;
+    text-align: center;
+    top: 150px;
+    left: 150px;
     width: 500px;
     opacity: 0;
     animation: 1s fadein 0.5s forwards;
@@ -83,13 +57,8 @@ header .container h3 {
     }
 }
 
-.hero-content-area h2 {
-    font-family: 'Nunito', sans-serif;
-}
-
 .cover h2 {
-    font: bold 48px "Open Sans", sans-serif;
-    
+    font: bold 48px "Nunito", sans-serif;   
 }
 
 .cover h3 {
@@ -97,27 +66,24 @@ header .container h3 {
     font-style: italic;
 }
 
-.cover .hero-content-area .info-content-area {
+.section-menu {
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    border: 1px solid blue;
+    margin-top: 100px;  
     height: 150px;
     align-items: center;
     justify-content: center;
 }
 
-.cover .hero-content-area .info-content-area h3 {
+.section-menu h3 {
     font-style: normal;
     flex-basis: 33%;
     font: normal 24px "Open Sans", sans-serif;
-    border: 1px solid yellow;
     padding: 10px;
     transition: 0.3s transform ease-out,
                 0.3s color ease-out;
 }
 
-.cover .hero-content-area .info-content-area h3:hover {
+.section-menu h3:hover {
     transform: scale(1.2) translate(0px, -10px);
 }
 
@@ -129,19 +95,17 @@ header .container h3 {
 
 #game-rules:hover { color: #80f5ce; } 
 
-.cover .hero-content-area .info-content-area .middle-info {
+.sections-middle {
     flex-basis: 33%;
     display: flex;
-    border: 1px solid purple;
     flex-direction: column;
-    height: inherit;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.cover .hero-content-area .info-content-area .middle-info h3{
-    border: solid 1px gray;
+.sections-middle h3{
     width: 100%;
+    padding: 25px 0;
     text-align: center; 
 }
 
