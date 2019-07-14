@@ -110,29 +110,24 @@ hr {
 }
 
 /* About Me Styles */
-
 .about-me {
     display: flex;
     flex-direction: column;
-    padding: 100px 80px;
+    padding: 60px;
     align-items: center;
 }
 
-.about-me .grid {
+.container {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    height: 500px;
-    /* border: 5px solid blue; */
+    padding-top: 25px;
     justify-content: center;
 }
 
-
-.about-me .wrapper {
+.gallery {
     display: flex;
     flex-basis: 50%;
     align-items: center;
-    /* border: solid 2px orange; */
 }
 
 img {
@@ -150,7 +145,7 @@ img:hover {
     margin-bottom: 63%;
 }
 
-.about-me .grid .vl {
+.about-me .container .vl {
     border-left: 3px solid #0FA8AB;
     position: relative;
     left: 4.5%;
@@ -159,7 +154,7 @@ img:hover {
     flex-basis: 10%;
 }
 
-.about-me .grid p {
+.about-me .container p {
     /* border: 2px solid red; */
     flex-basis: 50%;
     text-align: center;
