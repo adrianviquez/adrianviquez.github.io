@@ -23,13 +23,15 @@ hr {
     margin-top: 10px;
 }
 
+section {
+    padding: 40px;
+}
+
 /* Hero Styles */
 .cover {
     position: relative;
-    /* flex-direction: column; 
-    justify-content: center;
-    align-items: center;  */
     height: 100vh;
+    padding: 0;
 }
 
 .background-image {
@@ -113,7 +115,6 @@ hr {
 .about-me {
     display: flex;
     flex-direction: column;
-    padding: 60px;
     align-items: center;
 }
 
@@ -121,18 +122,17 @@ hr {
     display: flex;
     width: 100%;
     padding-top: 25px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .gallery {
     display: flex;
-    flex-basis: 50%;
-    align-items: center;
+    flex-direction: column;
+    max-width: 40%;
 }
 
-img {
-    width: 100%;
-    vertical-align: bottom;
+.first, .second, .third {
+    width: 50%;
     border-radius: 15px;
     transition: 0.3s transform ease-out;
 }
@@ -141,23 +141,30 @@ img:hover {
     transform: scale(1.2) translate(0px, -10px);
 }
 
-.second-a {
-    margin-bottom: 63%;
+.first {
+    background: url(../images/Adrian1.jpg);
+    align-self: flex-end;
 }
 
-.about-me .container .vl {
-    border-left: 3px solid #0FA8AB;
+.second {
+    background: url(../images/drone.jpg);
+}
+
+.third {
+    background: url(../images/paint.jpg);
+    align-self: flex-end;
+}
+
+.vl {
+    border-left: 2px solid #0FA8AB;
     position: relative;
-    left: 4.5%;
-    height: 50%;
+    height: 300px;
     align-self: center;
-    flex-basis: 10%;
 }
 
-.about-me .container p {
-    /* border: 2px solid red; */
-    flex-basis: 50%;
+.about-me p {
     text-align: center;
     align-self: center;
+    max-width: 40%;
 }
 
