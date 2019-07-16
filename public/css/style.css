@@ -34,8 +34,10 @@ section {
     padding: 0;
 }
 
-.background-image {
+.cover-image {
     background: url(../images/LandingImage.jpeg);
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     height: 100%;
     z-index: -1;
@@ -116,6 +118,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
