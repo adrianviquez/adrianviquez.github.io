@@ -8,6 +8,7 @@
 html {
     font: normal 16px sans-serif;
     color: #555;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -77,26 +78,25 @@ section {
     justify-content: center;
 }
 
-.section-menu h3 {
+.section-menu a {
     font-style: normal;
     flex-basis: 33%;
     font: normal 24px "Open Sans", sans-serif;
     padding: 10px;
+    color: white;
+    text-decoration: none;
     transition: 0.3s transform ease-out,
                 0.3s color ease-out;
 }
 
-.section-menu h3:hover {
+.section-menu a:hover {
     transform: scale(1.2) translate(0px, -10px);
+    color: #80f5ce; /* color: #ff9c69; */ /* color: #8ccbf5; */ 
 }
 
-#about:hover { color: #80f5ce;}
-
-#skills:hover {color: #80f5ce; /* color: #ff9c69; */}
-
-#projects:hover { color: #80f5ce; /* color: #8ccbf5; */ }
-
-#game-rules:hover { color: #80f5ce; } 
+.section-menu a:visited {
+    color: white;
+}
 
 .sections-middle {
     flex-basis: 33%;
