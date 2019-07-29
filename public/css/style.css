@@ -182,7 +182,6 @@ section {
     flex: 1 0 21%; 
     height: 25vh;
     margin: 3px;
-    background-color: blue;
     position: relative;
 }
 
@@ -196,7 +195,7 @@ section {
     bottom: 0;
     color: white;
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .title {
