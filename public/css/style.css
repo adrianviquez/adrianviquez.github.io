@@ -172,6 +172,10 @@ section {
 
 /* Projects styling */
 
+.projects {
+    height: 100vh;
+}
+
 .projects .grid {
     display: flex;
     flex-wrap: wrap;
