@@ -41,15 +41,21 @@ section {
 
 .title-box .prev {
     position: absolute;
-    margin: 0;
     top: 0;
     left: 0;
+    transition: color 0.2s;
 }
 
 .title-box .post {
     position: absolute;
     right: 0;
     top: 0;
+    transition: color 0.2s;
+}
+
+.post:hover, .prev:hover {
+    color: #8ccbf5;
+    /* color: #ff9c69; */ /* color: #8ccbf5; */ 
 }
 
 /* Hero Styles */
@@ -110,15 +116,12 @@ section {
     font-size: 24px;
     transition: 0.3s transform ease-out,
                 0.3s color ease-out;
+    color: white;
 }
 
 .section-menu a:hover {
     transform: scale(1.2) translate(0px, -10px);
-    color: #80f5ce; /* color: #ff9c69; */ /* color: #8ccbf5; */ 
-}
-
-.section-menu a:visited {
-    color: white;
+    color: #80f5ce; 
 }
 
 .sections-middle {
