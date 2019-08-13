@@ -221,7 +221,7 @@ section {
 }
 
 .projects .item * {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 
 .projects .item img:hover {
@@ -232,17 +232,25 @@ section {
 }
 
 .projects .item:hover .project-title {
-    opacity: 0;
-    transform: translateY(-210px);
+    transform: translateY(-178px);
 }
 
 .projects .project-description {
     transform: translateY(210px);
-    display: none;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+.projects .item:hover .project-description {
+    transform: translateY(0);
+    display: block;
+    opacity: 1;
 }
 
 .projects .project-description p {
     color: white;
+    padding-bottom: 10px;
 }
 
 .projects img {
@@ -254,7 +262,6 @@ section {
 
 .projects .project-title {
     position: absolute;
-    opacity: 1;
     bottom: 0;
     left: 0;
     color: white;
