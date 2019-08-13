@@ -13,6 +13,8 @@ html {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 hr {
@@ -198,19 +200,17 @@ section {
 
 /* Projects styling */
 
-.projects {
-    height: 100vh;
-}
-
 .projects .grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin-top: 35px;
+    list-style: none;
+    width: 100%;
 }
 
 .projects .item {
-    flex: 1 0 21%; 
-    height: 25vh;
+    flex: 1 0 calc(25% - 8px);
+    max-width: calc(25% - 8px);
     margin: 3px;
     position: relative;
 }
@@ -223,6 +223,7 @@ section {
 .projects .project-title {
     position: absolute;
     bottom: 0;
+    left: 0;
     color: white;
     padding-left: 10px;
     padding-bottom: 5px;
