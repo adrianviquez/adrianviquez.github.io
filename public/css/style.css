@@ -87,10 +87,9 @@ a {
     transition: color 0.2s;
 }
 
-.post:hover, .prev:hover {
-    color: #80f5ce;
-    /* color: #ff9c69; /* color: #8ccbf5; */ 
-}
+/* #80f5ce; */
+/* color: #ff9c69; /* color: #8ccbf5; */ 
+
 
 /* Hero Styles */
 .cover {
@@ -100,7 +99,12 @@ a {
 }
 
 .cover-image {
-    background: url(../images/LandingImage.jpeg);
+    background-image: 
+        linear-gradient(
+        to right,
+        rgba(25, 81, 144, 0.6),
+        rgba(255, 0, 0, 0)),
+    url(../images/LandingImage.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -212,6 +216,16 @@ a {
     text-align: center;
     align-self: center;
     max-width: 40%;
+}
+
+/* Experience and Skills */
+
+.experience-and-skills {
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.6),
+        rgba(255, 0, 0, 0)
+    )
 }
 
 /* Projects styling */
