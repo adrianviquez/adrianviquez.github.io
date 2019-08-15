@@ -66,29 +66,56 @@ a {
     margin: 0 auto;
 }
 
-.title-box {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    height: 35px;
-}
-
-.title-box .prev {
+.navbar {
+    border: 0;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
-    transition: color 0.2s;
+    width: 110px;
+    z-index: 100;
+    text-align: center;
 }
 
-.title-box .post {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: color 0.2s;
+/* .navbar ul::after {
+    width: 2px;
+    height: 90px;
+    margin: 0 auto;
+    content: '';
+    display: block;
+    background-color: #195190FF;
+} */
+
+.navbar a {
+    color: rgb(219,176,74);
+    width: 100%;
 }
+
+.navbar li {
+    padding: 15px;
+    width: 140px;
+    background-color: rgb(25,81,144);
+}
+
+.navbar li:hover {
+    background-color: #dbb04aff;
+    cursor: pointer;
+}
+
+.navbar li:hover a {
+    color: #195190FF;
+}
+
+
 
 /* #80f5ce; */
 /* color: #ff9c69; /* color: #8ccbf5; */ 
+/* blue rgb(25, 81, 144) */
+/* orange rgb(255,156,105) */
+/* light blue rgb(140,203,245) */
+/* veige rgb(241, 236, 220) */
+/* green-blue rgb(144, 182, 145) */
+/* yellow #dbb04aff */
+
 
 
 /* Hero Styles */
@@ -100,10 +127,10 @@ a {
 
 .cover-image {
     background-image: 
-        linear-gradient(
+/*         linear-gradient(
         to right,
-        rgba(25, 81, 144, 0.6),
-        rgba(255, 0, 0, 0)),
+        rgba(25, 81, 144, 0.3),
+        rgba(255, 0, 0, 0)), */
     url(../images/LandingImage.jpeg);
     background-attachment: fixed;
     background-position: center;
@@ -116,9 +143,8 @@ a {
     position: absolute; 
     color: white;
     text-align: center;
-    top: 150px;
-    left: 150px;
-    width: 500px;
+    top: 30vh;
+    left: 20vw;
     opacity: 0;
     animation: 1s fadein 0.5s forwards;
 }
@@ -221,11 +247,11 @@ a {
 /* Experience and Skills */
 
 .experience-and-skills {
-    background: linear-gradient(
+    /* background: linear-gradient(
         to right,
         rgba(0,0,0,0.6),
         rgba(255, 0, 0, 0)
-    )
+    ) */
 }
 
 /* Projects styling */
@@ -316,7 +342,7 @@ a {
 }
 
 .game-rules .rule-container {
-    background-color:  rgb(233, 237, 240);
+    background-color:  #eceaea;
     padding: 10px;
     color: rgb(158, 167, 176);
     margin: 5px 0;
