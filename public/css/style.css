@@ -239,6 +239,23 @@ a {
     background-color: #eceaea;
 }
 
+.about-me .about-picture {
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-me .about-picture img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    border: solid rgb(144, 182, 145) 3px;
+    border-radius: 50%;
+}
+
 
 .gallery {
     display: flex;
