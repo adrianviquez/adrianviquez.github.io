@@ -25,6 +25,10 @@ hr {
     margin: 0 auto;
 }
 
+li {
+    font: 16px "roboto", sans-serif;   
+}
+
 a {
     text-decoration: none;
     color: #555;
@@ -239,9 +243,13 @@ a {
     background-color: #eceaea;
 }
 
+.about-me .items {
+    display: flex;
+}
 .about-me .about-picture {
     border-radius: 50%;
     width: 225px;
+    min-width: 225px;
     height: 225px;
     position: relative;
     overflow: hidden;
@@ -254,6 +262,12 @@ a {
     width: auto;
     border: solid rgb(144, 182, 145) 3px;
     border-radius: 50%;
+}
+
+.about-me .description {
+    width: 100%;
+    margin-left: 30px;
+    height: auto; 
 }
 
 
@@ -303,10 +317,22 @@ a {
     ) */
 }
 
+.experience-and-skills .title::before {
+    width: 400px;
+}
+
 /* Projects styling */
 
 .projects {
     background-color: #eceaea;
+}
+
+.projects .title::before {
+    width: 100%;
+}
+
+.projects .title::after {
+    width: 350px;
 }
 
 .projects .grid {
@@ -384,20 +410,27 @@ a {
     height: 100vh;
 }
 
+.game-rules .title::before {
+    width: 100%;
+}
+
+.game-rules .title::after {
+    width: 50px;
+}
+
 .game-rules .grid { 
     display: flex;
     flex-direction: column;
-    padding-top: 30px; 
+    padding-top: 15px; 
 }
 
 .game-rules .rule-container {
-    background-color:  #eceaea;
     padding: 10px;
     color: rgb(158, 167, 176);
     margin: 5px 0;
 }
 
 .game-rules .rule-container h3 {
-    font-weight: 400;
+    font: 20px "roboto", sans-serif;   
 }
 
