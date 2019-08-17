@@ -35,33 +35,12 @@ a {
 }
 
 .title {
-    text-align: left;
-    color: #195190FF;
+    text-align: center;
+    color: #1194ea;
     width: 100%;
     margin: 10px 0 40px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    white-space: nowrap;
-    font: 30px "roboto", sans-serif;   
-}
-
-.title::before {
-    width: 50px;
-    height: 1px;
-    content: '';
-    display: block;
-    margin-right: 10px;
-    background-color: #195190FF;
-}
-
-.title::after {
-    width: 100%;
-    height: 1px;
-    content: '';
-    display: block;
-    margin-left: 15px;
-    background-color: #195190FF;
+    font: 36px "poppins", sans-serif;  
+    font-weight: 500; 
 }
 
 .container {
@@ -94,15 +73,6 @@ a {
     position: fixed;
     top: 0;
 }
-
-/* .navbar ul::after {
-    width: 2px;
-    height: 90px;
-    margin: 0 auto;
-    content: '';
-    display: block;
-    background-color: #195190FF;
-} */
 
 .navbar a {
     color: rgb(219,176,74);
@@ -142,7 +112,7 @@ a {
   }
 }
 
-
+/* Colors */
 /* #80f5ce; */
 /* color: #ff9c69; /* color: #8ccbf5; */ 
 /* blue rgb(25, 81, 144) */
@@ -151,6 +121,10 @@ a {
 /* veige rgb(241, 236, 220) */
 /* green-blue rgb(144, 182, 145) */
 /* yellow #dbb04aff */
+/* blue #3794fd */
+/* blue #1194ea */
+/* cream #fbf5ec */
+
 
 
 
@@ -240,7 +214,7 @@ a {
 
 /* About Me Styles */
 .about-me {
-    background-color: #eceaea;
+    background-color:#fbf5ec;
 }
 
 .about-me .items {
@@ -317,22 +291,10 @@ a {
     ) */
 }
 
-.experience-and-skills .title::before {
-    width: 400px;
-}
-
 /* Projects styling */
 
 .projects {
-    background-color: #eceaea;
-}
-
-.projects .title::before {
-    width: 100%;
-}
-
-.projects .title::after {
-    width: 350px;
+    background-color: #fbf5ec9c;
 }
 
 .projects .grid {
@@ -408,14 +370,6 @@ a {
 /* Game Rules Styling */
 .game-rules {
     height: 100vh;
-}
-
-.game-rules .title::before {
-    width: 100%;
-}
-
-.game-rules .title::after {
-    width: 50px;
 }
 
 .game-rules .grid { 
