@@ -66,6 +66,7 @@ a {
     margin: 10px 0;
     font: 36px "poppins", sans-serif;  
     font-weight: 500; 
+    text-transform: capitalize;
 }
 
 .container {
@@ -355,12 +356,21 @@ a {
     transition: 0.15s color ease-in-out;
 }
 
+.experience-and-skills .row:last-child {
+    margin-bottom: 50px;
+}
+
 .experience-and-skills .row h2:hover{
     color: #1194ea;
 }
 
 .experience-and-skills .date {
     margin-top: 10px;
+}
+
+.experience-and-skills .date span{
+    color: #77776c;
+    font-style: italic;
 }
 
 .experience-and-skills .position {
