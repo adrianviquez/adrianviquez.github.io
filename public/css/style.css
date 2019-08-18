@@ -63,7 +63,7 @@ a {
     text-align: center;
     color: #1194ea;
     width: 100%;
-    margin: 10px 0 20px;
+    margin: 10px 0;
     font: 36px "poppins", sans-serif;  
     font-weight: 500; 
 }
@@ -321,6 +321,7 @@ a {
 
 .experience-and-skills .row {
     display: flex;
+    margin-bottom: 35px;
 }
 
 .experience-and-skills .left {
@@ -357,6 +358,11 @@ a {
 
 .experience-and-skills span {
     color: #1194ea;
+}
+
+.experience-and-skills .right a {
+    color: #1194ea;
+    text-decoration: underline;
 }
 /* Projects styling */
 
