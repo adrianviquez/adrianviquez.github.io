@@ -8,10 +8,13 @@
 html {
     color: #555;
     scroll-behavior: smooth;
+
 }
 
 body {
     font: 16px 'poppins', sans-serif;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 ul {
@@ -20,7 +23,7 @@ ul {
     padding: 0;
 }
 
-p, h2, h3, h4, h5 {
+p, h2, h3, h4, h5, li {
     color: #77776c
 }
 
@@ -44,10 +47,9 @@ h4, h5 {
 
 hr {
     width: 100%;
-    height: 1px;
-    background-color: #abd1c9;
-    border: 0;
-    margin: 0 auto;
+    background-color: #77776c;
+    opacity: 0.2;
+    margin: 25px 0;
 }
 
 li {
@@ -341,6 +343,20 @@ a {
     margin-bottom: 35px;
 }
 
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 40px 90px;
+    }
+   
+    .experience-and-skills .row {
+        flex-direction: column;
+    }
+
+    .experience-and-skills .experiences .left, .experience-and-skills .experiences .right {
+        width: 100%;
+    }
+}
+
 .experience-and-skills .left {
     width: 33.333%;
     margin-right: 40px;
@@ -354,10 +370,6 @@ a {
     text-align: left;
     font-size: 19px;
     transition: 0.15s color ease-in-out;
-}
-
-.experience-and-skills .row:last-child {
-    margin-bottom: 50px;
 }
 
 .experience-and-skills .row h2:hover{
@@ -375,6 +387,7 @@ a {
 
 .experience-and-skills .position {
     font-weight: 500;
+    margin-top: 15px;
 }
 
 .experience-and-skills .description {
@@ -393,6 +406,31 @@ a {
 .experience-and-skills .right a {
     color: #1194ea;
     text-decoration: underline;
+}
+
+.experience-and-skills .skill-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.experience-and-skills .skills li {
+    width: 33.333%;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.experience-and-skills .skills li:nth-child(3n-1) {
+    text-align: center;
+}
+
+.experience-and-skills .skills li:nth-child(3n) {
+    text-align: right;
+}
+
+.experience-and-skills .skills h3 {
+    color: #1194ea;
+    font-style: italic;   
+    margin-top: 10px; 
 }
 /* Projects styling */
 
