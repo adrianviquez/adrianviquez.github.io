@@ -343,20 +343,6 @@ a {
     margin-bottom: 35px;
 }
 
-@media screen and (max-width: 992px) {
-    .container {
-        padding: 40px 90px;
-    }
-   
-    .experience-and-skills .row {
-        flex-direction: column;
-    }
-
-    .experience-and-skills .experiences .left, .experience-and-skills .experiences .right {
-        width: 100%;
-    }
-}
-
 .experience-and-skills .left {
     width: 33.333%;
     margin-right: 40px;
@@ -453,7 +439,7 @@ a {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 200px;
+    min-width: 210px;
     max-width: 270px;
     width: 100%;
     background: #000000;
@@ -580,3 +566,26 @@ a {
     color: cornsilk;
 }
 
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 40px 90px;
+    }
+   
+    .experience-and-skills .row {
+        flex-direction: column;
+    }
+
+    .experience-and-skills .experiences .left, .experience-and-skills .experiences .right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 45px;
+    }
+
+    .footer .container {
+        padding: 10px 90px;
+    }
+}
