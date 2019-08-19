@@ -8,7 +8,6 @@
 html {
     color: #555;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -162,14 +161,10 @@ a {
 }
 
 .cover-image {
-    background-image: 
-/*         linear-gradient(
-        to right,
-        rgba(25, 81, 144, 0.3),
-        rgba(255, 0, 0, 0)), */
-    url(../images/LandingImage.jpeg);
+    background-image: url(../images/LandingImage.jpeg);
     background-attachment: fixed;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
     height: 100%;
     z-index: -1;
@@ -567,6 +562,18 @@ a {
 }
 
 @media screen and (max-width: 992px) {
+    .content-area {
+        left: 15vw;
+    }
+    
+    .content-area h1 {
+        font-size: 48px;
+    }
+
+    .content-area h3 {
+        font-size: 20px;
+    }
+
     .container {
         padding: 40px 90px;
     }
@@ -585,7 +592,54 @@ a {
         padding: 30px 45px;
     }
 
+    .content-area {
+        left: 2vw;
+        top: calc(100vh - 160px);
+    }
+
+    .content-area h1 {
+        font-size: 38px;
+    }
+
+    .content-area h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .cover .content-area .media-items {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .cover .content-area .media, .cover .content-area .email {
+        width: 100%;
+        text-align: left;
+    }
+
     .footer .container {
-        padding: 10px 90px;
+        padding: 10px 35px;
     }
 }
+
+/* 
+.content-area {
+    left: 1vw;
+    top: calc(100vh - 220px);
+}
+
+.content-area h1 {
+}
+
+.content-area h3 {
+    text-align: left;
+}
+
+.cover .content-area .media-items {
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.cover .content-area .media, .cover .content-area .email {
+    width: 100%;
+    text-align: left;
+} */
