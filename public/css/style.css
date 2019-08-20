@@ -619,6 +619,30 @@ a {
         width: 100%;
         text-align: left;
     }
+    .experience-and-skills .skills li {
+        width: 50%;
+    }
+
+    .experience-and-skills .skills li:nth-child(3n-1) {
+        text-align: unset;
+    }
+
+    .experience-and-skills .skills li:nth-child(3n) {
+        text-align: unset;
+    }
+
+    .experience-and-skills .skills li:nth-child(2n-1) {
+        text-align: left;
+    }
+
+    .experience-and-skills .skills li:nth-child(2n) {
+        text-align: right;
+    }
+
+    .experience-and-skills .skills .skill-grid.misc > li {
+        width: 100%;
+        text-align: left;
+    }
 
     .footer .container {
         padding: 10px 35px;
