@@ -60,6 +60,10 @@ a {
     color: #555;
 }
 
+#d_s, #d_s_description {
+    color: #222;
+}
+
 .title {
     text-align: center;
     color: #1194ea;
@@ -445,6 +449,7 @@ a {
 
 .projects .item * {
     transition: all 0.35s ease-in-out;
+    /* opacity: 0.7; */
 }
 
 .projects .item:hover img{
@@ -623,6 +628,32 @@ a {
         width: 100%;
         text-align: left;
     }
+
+    .projects .grid .item {
+        background: #222;
+    }
+
+    .projects .item img {
+        opacity: 0.7;
+    }
+
+    .projects .grid .item:hover img {
+        opacity: 0.7;
+    }
+
+    .projects .item .project-description {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    .projects .item .project-description p {
+        font-size: 14px;
+    }
+
+    .projects .item .project-title {
+        transform: translateY(-178px);
+    }
+
     .experience-and-skills .skills li {
         width: 50%;
     }
@@ -641,6 +672,10 @@ a {
 
     .experience-and-skills .skills li:nth-child(2n) {
         text-align: right;
+    }
+
+    #d_s, #d_s_description {
+        color: #f5f5f5;
     }
 
     .experience-and-skills .skills .skill-grid.misc > li {
