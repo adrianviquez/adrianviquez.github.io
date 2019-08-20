@@ -589,7 +589,11 @@ a {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 30px 45px;
+        padding: 30px 20px;
+    }
+
+    .project .container {
+        padding: 40px 0px;
     }
 
     .content-area {
