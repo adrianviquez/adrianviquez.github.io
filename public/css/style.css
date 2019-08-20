@@ -598,7 +598,11 @@ a {
 
     .content-area {
         left: 2vw;
-        /* top: 10vh; */
+        top: 42vh;
+    }
+
+    .content-area .cover-image {
+        background-attachment: unset;
     }
 
     .content-area h1 {
