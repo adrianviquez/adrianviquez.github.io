@@ -594,7 +594,7 @@ a {
 
     .content-area {
         left: 2vw;
-        top: calc(100vh - 160px);
+        top: 10vh;
     }
 
     .content-area h1 {
@@ -620,26 +620,3 @@ a {
         padding: 10px 35px;
     }
 }
-
-/* 
-.content-area {
-    left: 1vw;
-    top: calc(100vh - 220px);
-}
-
-.content-area h1 {
-}
-
-.content-area h3 {
-    text-align: left;
-}
-
-.cover .content-area .media-items {
-    flex-direction: column;
-    margin-top: 0;
-}
-
-.cover .content-area .media, .cover .content-area .email {
-    width: 100%;
-    text-align: left;
-} */
