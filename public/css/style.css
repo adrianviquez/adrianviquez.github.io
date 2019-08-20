@@ -601,7 +601,7 @@ a {
         top: 42vh;
     }
 
-    .content-area .cover-image {
+    .cover .cover-image {
         background-attachment: unset;
     }
 
