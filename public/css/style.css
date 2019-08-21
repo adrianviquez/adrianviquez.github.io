@@ -299,6 +299,10 @@ a {
     text-align: center; 
 }
 
+.about-me .description p {
+    padding: 10px 60px;
+}
+
 
 .gallery {
     display: flex;
@@ -372,7 +376,7 @@ a {
 
 .experience-and-skills .position {
     font-weight: 500;
-    margin-top: 15px;
+    line-height: 1.2em;
 }
 
 .experience-and-skills .description {
