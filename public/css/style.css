@@ -560,14 +560,17 @@ a {
 .footer .ending-quote {
     font-style: italic;
     font-size: 36px;
+    color: cornsilk;
+    margin: 0 auto;
+    transition: color 0.3s ease-in-out;
 }
+
+.footer a:hover .ending-quote {
+    color: #1194ea;
+}  
 
 .footer .items> * {
     padding: 5px 0;
-}
-
-.footer .ending-quote {
-    color: cornsilk;
 }
 
 @media screen and (max-width: 992px) {
