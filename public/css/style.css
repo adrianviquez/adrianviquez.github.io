@@ -26,6 +26,8 @@ p, h2, h3, h4, h5, h6, li {
     color: #77776c
 }
 
+
+
 h1 {
     font: 60px "poppins", sans-serif; 
 }
@@ -347,11 +349,26 @@ a {
 .experience-and-skills .row {
     display: flex;
     margin-bottom: 35px;
+    /* border: solid blue; */
 }
 
 .experience-and-skills .left {
     width: 33.333%;
     margin-right: 40px;
+    /* border: solid black; */
+}
+
+.experience-and-skills .left img {
+    padding-top: 10px;
+    width: 80%;
+    min-width: 210px;
+    max-width: 250px;
+    max-height: 250px;
+    text-align: center;
+    /* max-height: 270px; */
+    /* margin: 0 auto; */
+    border-radius: 25px;
+    /* height: 150px; */
 }
 
 .experience-and-skills .right {
