@@ -29,7 +29,7 @@ p, h2, h3, h4, h5, h6, li {
 
 
 h1 {
-    font: 60px "poppins", sans-serif; 
+    font: 48px "poppins", sans-serif; 
 }
 
 h2 {
@@ -77,6 +77,13 @@ a {
     margin: 10px 0;
     font: 36px "poppins", sans-serif;  
     font-weight: 500; 
+}
+
+.projects .title {
+    text-align: start;
+    font: 30px "poppins", sans-serif;  
+    font-weight: 400; 
+    padding-left: 85px;
 }
 
 .container {
@@ -179,6 +186,48 @@ a {
     z-index: -1;
 }
 
+.navbar {
+    position: absolute;
+    top: 0;
+    margin: 60px 0;
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    animation: 1s fadein 0.5s forwards;
+}
+
+.navbar .nav-item {
+    margin-left: 60px;
+}
+
+.nav-item a {
+    font-size: 26px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #1194ea;
+}
+
+.bio{
+    position: absolute;
+    top: 85vh;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: 1s fadein 0.5s forwards;
+}
+
+.bio h2{
+    color: white;
+    font-weight: 300;
+    max-width: 650px;
+    padding: 10px;
+    font-size: 18px;
+}
+
 .cover .media-items {
     display: flex;
     margin-top: 15px;
@@ -205,6 +254,7 @@ a {
     position: relative;
     top: 13px;
     color: #f5f5f5;
+    margin-left: 85px;
 }
 
 .cover .email:hover {
@@ -214,9 +264,9 @@ a {
 .content-area {
     position: absolute; 
     color: #f5f5f5;
-    text-align: center;
-    top: 35vh;
-    left: 20vw;
+    /* text-align: center; */
+    top: 33vh;
+    margin-left: 60px;
     opacity: 0;
     animation: 1s fadein 0.5s forwards;
 }
@@ -273,11 +323,7 @@ a {
 
 /* About Me Styles */
 .about-me {
-    background-color:#fbf5ec;
-}
-
-.about-me .items {
-    /* display: flex; */
+    background-color:#f5f5f5;
 }
 
 .about-me .about-picture {
@@ -436,6 +482,7 @@ a {
 .experience-and-skills .skill-item{
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
 }
 
 .experience-and-skills .header-container h3{
@@ -559,7 +606,7 @@ a {
 
 /* Game Rules Styling */
 .game-rules {
-    background-color: #f5f5f5;
+    background-color: #fbf5ec;
 }
 
 .game-rules .container {
@@ -628,12 +675,9 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .content-area {
-        left: 15vw;
-    }
-    
+
     .content-area h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
 
     .content-area h3 {
@@ -650,6 +694,16 @@ a {
 
     .experience-and-skills .experiences .left, .experience-and-skills .experiences .right {
         width: 100%;
+        padding: 10px 25px;
+    }
+
+    .experience-and-skills .left img {
+        display: none;
+    }
+
+    .projects .title {
+        text-align: center;
+        padding-left: 0;
     }
 }
 
@@ -663,8 +717,39 @@ a {
     }
 
     .content-area {
-        left: 2vw;
-        top: 42vh;
+        top: 45vh;
+        margin-left: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: unset;
+    }
+
+    .cover .content-area .email {
+        margin-left: 10px;
+    }
+
+    .bio {
+        margin: 0 20px;
+    }
+
+    .bio h2 {
+        font-size: 16px;
+        top: 80vh;
+    }
+
+    .navbar {
+        margin-left: 30px;
+    }
+
+    .navbar .nav-item {
+        margin-left: 0;
+        text-align: start;
+    }
+
+    .navbar .nav-item a {
+        font-size: 18px
     }
 
     .cover .cover-image {
@@ -672,7 +757,7 @@ a {
     }
 
     .content-area h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .content-area h3 {
