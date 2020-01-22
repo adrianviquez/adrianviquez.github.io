@@ -732,11 +732,11 @@ a {
 
     .bio {
         margin: 0 20px;
+        top: 77vh;
     }
 
     .bio h2 {
         font-size: 16px;
-        top: 80vh;
     }
 
     .navbar {
