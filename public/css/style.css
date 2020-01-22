@@ -482,7 +482,7 @@ a {
 .experience-and-skills .skill-item{
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .experience-and-skills .header-container h3{
