@@ -81,7 +81,7 @@ a {
 
 .container {
     max-width: 1280px;
-    padding: 40px 180px;
+    padding: 40px 140px;
     margin: 0 auto;
 }
 
@@ -349,44 +349,47 @@ a {
 .experience-and-skills .row {
     display: flex;
     margin-bottom: 35px;
-    /* border: solid blue; */
+    box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 25px;
 }
 
 .experience-and-skills .left {
     width: 33.333%;
-    margin-right: 40px;
+    margin-right: 20px;
+    max-height: 300px;
     /* border: solid black; */
 }
 
 .experience-and-skills .left img {
-    padding-top: 10px;
-    width: 80%;
-    min-width: 210px;
-    max-width: 250px;
-    max-height: 250px;
-    text-align: center;
-    /* max-height: 270px; */
-    /* margin: 0 auto; */
+    width: 90%;
     border-radius: 25px;
-    /* height: 150px; */
+    text-align: center;
+    display: block;
+}
+
+.experience-and-skills .left img:hover {
+    opacity: 0.85;
 }
 
 .experience-and-skills .right {
     width: 66.666%;
+    padding: 10px 10px 5px 0;
+}
+
+.experience-and-skills .right ul li {
+    list-style: circle;
+    margin-left: 20px;
 }
 
 .experience-and-skills .row h2{
     text-align: left;
-    font-size: 19px;
+    font-size: 16px;
+    color: #1194ea;
     transition: 0.15s color ease-in-out;
 }
 
 .experience-and-skills .row h2:hover{
     color: #1194ea;
-}
-
-.experience-and-skills .date {
-    margin-top: 10px;
 }
 
 .experience-and-skills .date span{
@@ -396,7 +399,7 @@ a {
 
 .experience-and-skills .position {
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 
 .experience-and-skills .description {
@@ -408,18 +411,55 @@ a {
     margin-right: 5px;
 }
 
+.experience-and-skills .location {
+    margin-bottom: 10px;
+}
+
 .experience-and-skills span {
     color: #1194ea;
 }
 
 .experience-and-skills .right a {
     color: #1194ea;
-    text-decoration: underline;
+    text-decoration: none;
+    width: auto;
+    display: inline-block
 }
 
-.experience-and-skills .skill-grid {
+.experience-and-skills .skills-content {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.experience-and-skills .skill-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-and-skills .header-container h3{
+    color: #77776C;
+    padding: 15px 0;
+    font-size: 22px;
+}
+
+.experience-and-skills .logo{
+    width: 100px;
+}
+
+.experience-and-skills .header-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-and-skills .each-skill{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-and-skills .each-skill h4{
+    padding: 5px 0;
 }
 
 .experience-and-skills .skills li {
@@ -434,12 +474,6 @@ a {
 
 .experience-and-skills .skills li:nth-child(3n) {
     text-align: right;
-}
-
-.experience-and-skills .skills h3 {
-    color: #1194ea;
-    font-style: italic;   
-    margin-top: 10px; 
 }
 /* Projects styling */
 
